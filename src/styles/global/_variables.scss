@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'ralewayregular';
+  src: url("../font/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: 'ralewaymedium';
+  src: url("../font/Raleway-Medium.ttf");
+}
+@font-face {
+  font-family: 'ralewaybold';
+  src: url("../font/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: 'ubuntulight';
+  src: url("../font/Raleway-Light.ttf");
+}
+@font-face {
+
+  font-family: 'ubuntuMedium';
+  src: url("../font/Raleway-Medium.ttf");
+}
+@font-face {
+  font-family: 'ubuntuitalic';
+  src: url("../font/Raleway-Italic.ttf");
+}
+
+//Color
+$mainColor: #4D7FD5;
+$secondaryColor: #4D61D6;
+$ultraColor: #927EEC;
+
+//bearkpoint
+$bp-tablet: 600px;
+$bp-desktop: 949px;
+$bp-desktop-large: 1200px;
+$bp-desktop-x-large: 1800px;
