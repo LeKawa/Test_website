@@ -1,7 +1,7 @@
 .header-container {
   height: 100vh;
   width: 15%;
-  right: 15;
+  right: 5%;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -11,7 +11,7 @@
   }
 
   &__orange {
-    background-color: #FAAB63;
+    background-color: $mainColor;
     height: 70%;
     width: 100%;
     @include for-size (tablet-portrait-up) {
@@ -34,12 +34,13 @@
   }
 
   &__carroussel {
-    margin: 0 auto;
+    margin-top: 4vh;
     @include for-size (tablet-portrait-up) {
-      margin-top: 20px;
+      margin: 20px auto;
     }
 
     &__left {
+      margin: 0 auto;
       width: 35px;
       text-align: center;
       background-color: #E4E4E4;
@@ -63,6 +64,7 @@
     }
 
     &__right {
+      margin: 0 auto;
       text-align: center;
       margin-top: 3.95vh;
       width: 35px;
@@ -105,6 +107,17 @@
         font-family: 'ralewaybold';
         margin-top: 8vh;
         font-size: 2.5rem;
+        text-align: center;
+      }
+    }
+
+    &__contact {
+      display: none;
+      @include for-size (tablet-portrait-up) {
+        display: block;
+        font-family: 'ralewayregular';
+        margin-top: 30vh;
+        font-size: 2rem;
         text-align: center;
       }
     }
