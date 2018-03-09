@@ -25,8 +25,8 @@
       transform: rotate(90deg);
       text-transform: uppercase;
       margin-top: 32vh;
-      letter-spacing: 3.8px;
-      font-size: 1.5rem;
+      letter-spacing: 4.3px;
+      font-size: 2.6rem;
       @include for-size (tablet-portrait-up) {
         display: none;
       }
@@ -41,15 +41,16 @@
 
     &__left {
       margin: 0 auto;
-      width: 35px;
+      width: 50px;
       text-align: center;
       background-color: #E4E4E4;
-      height: 35px;
+      height: 50px;
+      font-size: 1.6rem;
       border-radius: 100%;
       transition: all 0.3s ease-out;
       @include for-size (tablet-portrait-up) {
-        height: 40px;
-        width: 40px;
+        height: 60px;
+        width: 60px;
       }
 
       &:hover {
@@ -59,7 +60,7 @@
 
       &__more {
         font-family: 'ralewaymedium';
-        padding-top: 3vh;
+        padding-top: 2.8vh;
       }
     }
 
@@ -67,14 +68,15 @@
       margin: 0 auto;
       text-align: center;
       margin-top: 3.95vh;
-      width: 35px;
+      width: 50px;
+      font-size: 1.6rem;
       background-color: #E4E4E4;
-      height: 35px;
+      height: 50px;
       transition: all 0.3s ease-out;
       border-radius: 100%;
       @include for-size (tablet-portrait-up) {
-        height: 40px;
-        width: 40px;
+        height: 60px;
+        width: 60px;
       }
 
       &:hover {
@@ -84,7 +86,7 @@
 
       &__more {
         font-family: 'ralewaymedium';
-        padding-top: 3vh;
+        padding-top: 2.8vh;
       }
     }
 
@@ -92,8 +94,9 @@
       display: none;
       @include for-size (tablet-portrait-up) {
         display: block;
-        font-family: 'ralewaymedium';
+        font-family: 'ralewayregular';
         margin-top: 10vh;
+        font-size: 2rem;
         letter-spacing: 3.8px;
         text-align: center;
         transform: rotate(90deg);

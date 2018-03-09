@@ -1,18 +1,21 @@
 .footer-container {
   display: none;
-  background-color: red;
+  position: fixed;
+  background-color: white;
+  margin-top: 210px;
   width: 60%;
   @include for-size (tablet-portrait-up) {
     display: flex;
     justify-content:space-around;
-    height: 30px;
+    height: 20vh;
   }
   &__link {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: auto;
     &__twitter {
-      height: 30px;
-      width: 30px;
+      margin-top: 30px;
+      height: 25px;
+      width: auto;
 
     }
   }
