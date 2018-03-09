@@ -1,5 +1,19 @@
 .footer-container {
   display: none;
-  @include for-size (tablet-landscape-up) {
+  background-color: red;
+  width: 60%;
+  @include for-size (tablet-portrait-up) {
+    display: flex;
+    justify-content:space-around;
+    height: 30px;
+  }
+  &__link {
+    height: 30px;
+    width: 30px;
+    &__twitter {
+      height: 30px;
+      width: 30px;
+
+    }
   }
 }
