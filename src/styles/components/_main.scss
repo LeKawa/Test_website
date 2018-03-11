@@ -37,16 +37,3 @@
     }
   }
 }
-
-.absolute {
-  display: none;
-  @include for-size (tablet-portrait-up) {
-    position: fixed;
-    display: block;
-    width: 100%;
-    height: 15vh;
-    top: 70vh;
-    background-color: $secondaryColor;
-    z-index: 300;
-  }
-}
