@@ -107,8 +107,8 @@
       @include for-size (tablet-portrait-up) {
         display: block;
         font-family: 'ralewaybold';
-        margin-top: 8vh;
-        font-size: 2.5rem;
+        margin-top: 12vh;
+        font-size: 6.5rem;
         text-align: center;
       }
     }
@@ -118,7 +118,7 @@
       @include for-size (tablet-portrait-up) {
         display: block;
         font-family: 'ralewayregular';
-        margin-top: 35vh;
+        margin-top: 28vh;
         font-size: 1.5rem;
         text-align: center;
       }
