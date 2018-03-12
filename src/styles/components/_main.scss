@@ -3,7 +3,6 @@
   margin-left: 4%;
   height: 55vh;
   @include for-size (tablet-portrait-up) {
-    width: 200px;
   }
 
   &__mainTitle {
@@ -48,6 +47,9 @@
 }
 
 .is-active {
-  width: 500px;
+  width: 65%;
   opacity: 1;
+  @include for-size (tablet-portrait-up) {
+    width: 55%;
+  }
 }
