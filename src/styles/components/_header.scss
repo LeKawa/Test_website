@@ -8,7 +8,7 @@
   position: fixed;
   @include for-size (tablet-portrait-up) {
     flex-direction: row;
-    width: 20%;
+    width: 25%;
     right: 0;
   }
 
@@ -38,7 +38,7 @@
   &__carroussel {
     margin-top: 4vh;
     @include for-size (tablet-portrait-up) {
-      margin: 90px auto;
+      margin: 20px auto;
     }
 
     &__left {
@@ -108,8 +108,7 @@
       @include for-size (tablet-portrait-up) {
         display: block;
         font-family: 'ralewaybold';
-        margin-top: 12vh;
-        color: $secondaryColor;
+        margin-top: 10vh;
         font-size: 6.5rem;
         text-align: center;
       }
