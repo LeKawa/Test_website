@@ -1,6 +1,6 @@
 .header-container {
   height: 100vh;
-  width: 15%;
+  width: 18%;
   right: 5%;
   display: flex;
   background-color: white;
@@ -8,7 +8,7 @@
   position: fixed;
   @include for-size (tablet-portrait-up) {
     flex-direction: row;
-    width: 30%;
+    width: 20%;
     right: 0;
   }
 
@@ -38,7 +38,7 @@
   &__carroussel {
     margin-top: 4vh;
     @include for-size (tablet-portrait-up) {
-      margin: 20px auto;
+      margin: 90px auto;
     }
 
     &__left {
@@ -109,6 +109,7 @@
         display: block;
         font-family: 'ralewaybold';
         margin-top: 12vh;
+        color: $secondaryColor;
         font-size: 6.5rem;
         text-align: center;
       }
