@@ -1,9 +1,9 @@
 .main-container {
-  width: 70%;
+  opacity: 0;
   margin-left: 4%;
-  height: 50vh;
+  height: 55vh;
   @include for-size (tablet-portrait-up) {
-    width: 50%;
+    width: 200px;
   }
 
   &__mainTitle {
@@ -34,6 +34,20 @@
     line-height: 150%;
     @include for-size (tablet-portrait-up) {
       font-size: 1.8rem;
+      display: flex;
+    }
+
+    &__p {
+      width: 100%;
     }
   }
+}
+
+.main {
+  display: flex;
+}
+
+.is-active {
+  width: 500px;
+  opacity: 1;
 }

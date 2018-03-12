@@ -1,7 +1,8 @@
 .footer-container {
   display: none;
   position: fixed;
-  margin-top: 22vh;
+  margin-top: 15vh;
+  height: 55vh;
   width: 100%;
   @include for-size (tablet-portrait-up) {
     display: block;
@@ -25,8 +26,8 @@
 
       &__link {
         margin-top: 4.5vh;
-        height: 35px;
         width: 35px;
+        height: 35px;
       }
     }
 
@@ -34,9 +35,15 @@
       position: relative;
       height: 200px;
       top: -50%;
-      background-color: red;
+      background-color: $secondaryColor;
       margin-left: 4%;
+      display: flex;
+      justify-content: center;
       width: 30%;
+      &__photo {
+        width: 90%;
+        height: auto;
+      }
     }
   }
 

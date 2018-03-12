@@ -3,6 +3,7 @@
   width: 15%;
   right: 5%;
   display: flex;
+  background-color: white;
   flex-direction: column;
   position: fixed;
   @include for-size (tablet-portrait-up) {
