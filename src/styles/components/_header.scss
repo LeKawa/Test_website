@@ -8,7 +8,7 @@
   position: fixed;
   @include for-size (tablet-portrait-up) {
     flex-direction: row;
-    width: 25%;
+    width: 25vw;
     right: 0;
   }
 

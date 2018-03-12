@@ -2,12 +2,10 @@
   display: none;
   position: fixed;
   top: 0;
-  height: 100vh;
-  background-color: $secondaryColor;
-  width: 10%;
-  right: 28%;
+  width: 50%;
+  margin-left: 23%;
   @include for-size (tablet-portrait-up) {
-    display: block;
+    display: flex;
     height: 100vh;
   }
 
@@ -17,23 +15,26 @@
       display: block;
       width: 20%;
       height: 100vh;
+      background-color: $secondaryColor;
       z-index: 300;
     }
 
+    &__left {
+      z-index: 3000;
+      width: 80%;
+      height: 100vh;
+    }
+
     &__img {
-      background-color: $secondaryColor;
+      margin-top: 45vh;
+      margin-right: -39%;
 
       &__photo {
-        width: auto;
-        height: 40vh;
+        width: 70%;
+        margin-left: 20%;
+        height: auto;
       }
     }
   }
 
-  &__down {
-    background-color: white;
-    z-index: 1;
-    width: 65%;
-    height: 100%;
-  }
 }
