@@ -5,10 +5,16 @@
 
   &__social {
     margin-left: 4%;
-    width: 15%;
+    width: 65%;
     display: flex;
+    margin-bottom: 50px;
     margin-top: 10vh;
-    justify-content: space-between;
+    justify-content: space-around;
+    @include for-size (tablet-portrait-up) {
+      justify-content: space-between;
+      margin-bottom: 0px;
+      width: 15%;
+    }
 
     &__link {
       width: 30px;
