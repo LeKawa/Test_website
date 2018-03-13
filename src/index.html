@@ -55,12 +55,11 @@
   <div class="main">
 
     <div class="main-container is-active">
-      <h2 class="main-container__title">TITLE -</h2>
-      <p class="main-container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruren
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      <h2 class="main-container__title"></h2>
+      <p class="main-container__text">
       </p>
       <img src="img/egypte.jpg" alt="" class="main-container__text__img">
-      <p class="main-container__text__second">dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proide</p>
+      <p class="main-container__text__second"></p>
       <p class="main-container__text__third">dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proide</p>
     </div>
     <div class="main-container__social">
@@ -84,49 +83,57 @@
   <script src="modal.js"></script>
   <script src="index.js"></script>
   <script>
-    var patate = {
-      categories: ['Works', 'About', 'Contact'],
+    var patate = [
+      [
+        'About',
+        'Hey,Bienvenue sur mon site ! Je suis Hector Travaillé ( 19 ans ) un jeune Creative Developper. J\'ai toujours voulu travaillé dans le monde du World Wide Web 👦. Depuis tout petit j\'ai cherché un moyen de m\'exprimer / de créer ce que je voulais\. Rapidement j\'ai trouvé de nombreux outils pour réaliser mes idées, de Minecraft à Illustrator. ',
+        'Je suis actuellement en 1ère année de Bachelor Web à HETIC',
+       ['img/1.jpg'],
+       ['img/twitter.png', 'img/instagram.png']
+      ],
 
-      Works: [{
-        title: 'Sci-fi Project',
-        description: 'blbllzjpajf ajif jaizfh aifh ahf aàh',
-        under: 'blbllzjpajf ajif jaizfh aifh ahf aàh',
-        img: ['img/oko.jpg'],
-        social: ['img/twitter.png', 'img/instagram.png']
-      }, ],
+      [
+        'Sci-fi Project',
+        'blbllzjpajf ajif jaizfh aifh ahf aàh',
+        'blbllzjpajf ajif jaizfh aifh ahf aàh', ['img/oko.jpg'],
+        ['img/twitter.png', 'img/instagram.png']
+      ],
 
-      About: [{
-        title: 'About',
-        under: 'blbllzjpajf ajif jaizfh aifh ahf aàh',
-        description: 'hat if there was an Empire-focussed short Star Wars animation, drawn with the crazy detail and shading of classic 80s anime that\'s all but vanished from Japan nowadays? <br /> Well, I tried my best. Apologies in advance for not living up to Venus Wars standards. <br /> Drawn and',
-        img: ['img/oko.jpg'],
-        social: ['img/twitter.png', 'img/instagram.png']
-      }],
+      [
+        'About',
+        'hat if there was an Empire-focussed short Star Wars animation, drawn with the crazy detail and shading of classic 80s anime that\'s all but vanished from Japan nowadays? <br /> Well, I tried my best. Apologies in advance for not living up to Venus Wars standards. <br /> Drawn and',
+        ['img/oko.jpg'],
+        ['img/twitter.png', 'img/instagram.png']
+      ]
+    ];
 
-      Contact: [{
-        title: 'About',
-        description: 'hat if there was an Empire-focussed short Star Wars animation, drawn with the crazy detail and shading of classic 80s anime that\'s all but vanished from Japan nowadays? <br /> Well, I tried my best. Apologies in advance for not living up to Venus Wars standards. <br /> Drawn and',
-        img: ['img/oko.jpg'],
-        social: ['img/twitter.png', 'img/instagram.png']
-      }],
-
-    }
     var more = document.querySelector('.header-container__carroussel__left');
     var left = document.querySelector('.header-container__carroussel__right');
+    var text = document.querySelector('.main-container__text');
+    var title = document.querySelector('.main-container__title');
+    var under = document.querySelector('.main-container__text__second');
+    var i = 0;
 
+    title.innerHTML += patate[i][0];
+    text.innerHTML += patate[i][1];
+    under.innerHTML += patate[i][2];
 
     left.addEventListener('click', function() {
       console.log('less');
+
+      i--;
+      title.innerHTML += patate[i][0];
+      text.innerHTML += patate[i][1];
+      under.innerHTML += patate[i][2];
     });
 
     more.addEventListener('click', function() {
       console.log('more');
+      i++;
+      title.innerHTML += patate[i][0];
+      text.innerHTML += patate[i][1];
+      under.innerHTML += patate[i][2];
     });
-
-    console.log('coucou');
-
-    console.log(patate.About[0].description);
-    patate.About[0].description.classList.add('main-container__text');
   </script>
 </body>
 
