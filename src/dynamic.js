@@ -1,3 +1,2 @@
-for (var i = 0; i < data.length; i++) {
-  data[i]
-}
+console.log('coucou');
+console.log(patate.About[0].description);
