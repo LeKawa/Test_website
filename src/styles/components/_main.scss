@@ -5,10 +5,10 @@
 
   &__social {
     margin-left: 4%;
-    width: 30%;
+    width: 15%;
     display: flex;
-    margin-top: 25vh;
-    justify-content: space-around;
+    margin-top: 10vh;
+    justify-content: space-between;
 
     &__link {
       width: 30px;
@@ -31,12 +31,21 @@
   }
 
   &__text {
-    padding-top: 20px;
+    padding-top: 30px;
     font-family: 'ralewayregular';
     font-size: 1.5rem;
     line-height: 150%;
     @include for-size (tablet-portrait-up) {
       display: flex;
+      font-size: 1.8rem;
+    }
+    &__img {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      @include for-size (tablet-portrait-up) {
+        display: none;
+      }
     }
 
     &__second {
@@ -46,17 +55,20 @@
       line-height: 150%;
       @include for-size (tablet-portrait-up) {
         display: flex;
+        font-size: 1.7rem;
+        width: 50%;
       }
     }
 
     &__third {
-      padding-top: 20px;
+      padding-top: 10px;
       font-family: 'ralewayregular';
       font-size: 1.5rem;
       line-height: 150%;
       @include for-size (tablet-portrait-up) {
         display: flex;
         width: 50%;
+        font-size: 1.7rem;
         padding-top: 30px;
       }
     }
