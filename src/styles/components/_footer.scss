@@ -28,6 +28,10 @@
     &__img {
       margin-top: 45vh;
       margin-right: -39%;
+      transition: all .1s ease-out;
+      &:hover {
+        filter: blur(1px);
+      }
 
       &__photo {
         width: 70%;

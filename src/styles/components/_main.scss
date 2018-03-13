@@ -49,6 +49,18 @@
       }
     }
 
+    &__third {
+      padding-top: 20px;
+      font-family: 'ralewayregular';
+      font-size: 1.5rem;
+      line-height: 150%;
+      @include for-size (tablet-portrait-up) {
+        display: flex;
+        width: 50%;
+        padding-top: 30px;
+      }
+    }
+
     &__p {
       width: 100%;
     }
